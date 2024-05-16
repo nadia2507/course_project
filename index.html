@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZooW</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <style>
+        @import url(styles/smartphone_style.css) (max-width: 480px);
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="zoo"><img src="images/ZooW-_2_.svg" alt=""></a>
+        <div class="tel">9950&#9990;</div>
+        <div class="time">9.00-21.00</div>
+    </header>
+
+
+    <div class="pitom">Выбирете товары для
+        вашего питомца:</div>
+    <div class="jivotnie">
+        <img src="images/dog-face-svgrepo-com.svg" alt="" class="dog" onclick="HTMLDog()">
+        <img src="images/cat-face-svgrepo-com.svg" alt="" class="cat" onclick="HTMLCat()">
+        <img src="images/rabbit-easter-svgrepo-com.svg" alt="" class="rabbit" onclick="HTMLRodent()">
+        <img src="images/bird-svgrepo-com.svg" alt="" class="bird" onclick="HTMLBird()">
+        <img src="images/fish-svgrepo-com.svg" alt="" class="fish" onclick="HTMLFish()">
+    </div>
+    <aside id="products"></aside>
+    <div class="actiskid">Акции и скидки </div>
+    <aside class="acttovary"></aside>
+
+    
+
+    <aside id="forma"></aside>
+    <div id="popcat">Популярные категории:</div>
+    <div id="popular_category">
+
+        <div id="ruletki_for_dogs">
+            <img src="images/TrixieShampun.jpg" alt="" class="imgpopcat" onclick="HTMLDogHygiene()">
+            <div class="categ_of_tovar">Гигиена</div>
+            <div class="categ_of_animals">Собаки</div>
+        </div>
+        <div id="korm_for_dogs">
+            <img src="images/RoyalCAninGermanShepherd.jpg" alt="" class="imgpopcat" onclick="HTMLDogFood()">
+            <div class="categ_of_tovar">Корм</div>
+            <div class="categ_of_animals">Собаки</div>
+        </div>
+        <div id="korm_for_cats">
+            <img src="images/korm_for_cats.webp" alt="" class="imgpopcat" onclick="HTMLCatFood()">
+            <div class="categ_of_tovar">Корм</div>
+            <div class="categ_of_animals">Коты</div>
+        </div>
+        <div id="kletki_for_grizuni">
+            <img src="images/kletka_for_grizuni.webp" alt="" class="imgpopcat" onclick="HTMLRodentHouses()">
+            <div class="categ_of_tovar">Клетки</div>
+            <div class="categ_of_animals">Грызуны</div>
+        </div>
+        <div id="akvariumi">
+            <img src="images/akvarium.jpg" alt="" class="imgpopcat" onclick="HTMLFishHouses()">
+            <div class="categ_of_tovar">Аквариумы</div>
+            <div class="categ_of_animals">Рыбы</div>
+        </div>
+    </div>
+    <div id="kategoryi"></div>
+    <div id="brends">Наши партнеры</div>
+    <div id="partners">
+
+        <a href="https://www.royalcanin.com/ru"><img src="images/royal-canin-seeklogo.com.svg" alt=""></a>
+        <a href="https://happy-dog.ru/"><img src="images/happyDog.svg" alt=""></a>
+        <a href="https://www.proplan.ru/"><img src="images/pro-plan-seeklogo.com.svg" alt=""></a>
+        <a href="https://whiskas.ru/"><img src="images/whiskas.svg" alt=""></a>
+
+
+    </div>
+    <footer>
+        <div id="about_camp">О компании:</div>
+        <div id="news" onclick="alert('На данный момент новостей нет')">Новости</div>
+        <a href="deliver.html" id="dostavka">Доставка</a>
+        <a href="o_nas.html" id="about_us">О нас</a>
+        <div id="left_line"></div>
+        <div id="vash_city">Наш адрес:</div>
+        <a href="map.html" id="minsk">220006 г. Минск, ул.Сведлова 19 </a>
+        <a href="https://www.instagram.com/ezoo.by/"><img src="images/icons8-instagram.svg"
+                alt="" id="instagram"></a>
+        <a href="https://vk.com/zoomagazin_garfild"><img src="images/vk-120.svg" alt="" id="vk"></a>
+
+        <div id="right_line"></div>
+        <div id="num_fut">9950</div>
+        <div id="time_fut">9.00-22.00</div>
+    </footer>
+
+
+
+
+    <script src="./constants/catalog.js"></script>
+    <script src="./constants/root.js"></script>
+
+
+
+    <script src="./components/products_na_aktii/products_na_aktii.js"></script>
+    <link rel="stylesheet" href="./components/products_na_aktii/products_na_aktii.css">
+
+    <script src="./components/products/products.js"></script>
+</body>
+
+</html>
